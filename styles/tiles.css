@@ -1,0 +1,80 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 20px;   
+}
+.boxes a {
+    border: 4px solid  rgb(72, 218, 255);
+    height: 100px;
+    width: 150px;
+    border-radius: 2em;
+    padding: 5px;
+    margin: 10px;
+    background-color: snow;
+    box-shadow: 4px 4px lightgrey;
+    transition: all 0.2s ease-in-out;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boxes a:hover {
+    box-shadow: 0 20px 20px rgb(72, 218, 255, .4);
+}
+
+#xbox {
+    background-image: url("./images/xboxLogo.png");
+
+}
+#playstation {
+    background-image: url("./images/playstationLogo.png");
+}
+#nintendo {
+    background-image: url("./images/nintendoLogo.jpg");
+    background-color: rgb(224,1,1);
+}
+#spacex {
+    background-image: url("./images/spacexLogo.jpg");
+    background-color: black;
+}
+
+#starCitizen {
+    background-image: url("./images/starcitizenLogo.png");
+    
+}
+
+#minecraft {
+    background-image: url("./images/minecraftLogo.png");
+    
+}
+
+#tesla {
+    background-image: url("./images/teslaLogo.jpg");
+    background-color: rgb(227, 22, 53);
+}
+
+#bostonDynamics {
+    background-image: url("./images/bostondynamicsLogo.png");
+    
+}
+#darpa {
+    background-image: url("./images/DARPA-logo.png");
+}
+#joerogan {
+    background-image: url("./images/jreLogo.jpg");
+}
+#razer {
+    background-image: url("./images/razerLogo.png");
+    background-color: black;
+}
+#udacity {
+    background-image: url("./images/udacityLogo.png");
+}
+#youtube {
+    background-image: url("./images/youtubeLogo.jpg");
+}
+#google {
+    background-image: url("./images/googleLogo.svg");
+}

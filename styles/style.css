@@ -1,0 +1,219 @@
+@import "./tiles.css";
+@import "./blog-style.css";
+
+body {
+    background-color: rgb(107, 107, 107);
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: rgb(72, 218, 255);
+}
+.container {
+    font-family: 'Roboto', sans-serif;
+    background-color: snow;
+    display: grid;
+    grid-column: 500px 1fr 200px;
+    grid-row: 300px 200px 700px 300px;  
+}
+header {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    grid-area: 1/1/2/5;
+    background-color: rgb(107, 107, 107);
+    color: rgb(72, 218, 255);
+}
+nav {
+    grid-area: 2/1/3/5;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;
+    border: 8px solid rgb(72, 218, 255);
+    background-color: rgb(107, 107, 107);
+}
+.sidebar {
+    grid-area: 3/1/4/2;
+    height: 700px;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    border: 8px solid rgb(72, 218, 255);
+    overflow: auto;
+}
+.sidebar a {
+    display: flex;
+    flex-direction: column;
+    border: 4px solid  rgb(72, 218, 255);
+    background-color: snow;
+    height: 100px;
+    width: 150px;
+    border-radius: 2em;
+    justify-content: center;
+    box-shadow: 2px 4px lightgrey;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    color: rgb(107, 107, 107);
+}
+.sidebar a:hover {
+    background-color: rgb(72, 218, 255);
+    color: snow;
+}
+.interests {
+    grid-area: 3/2/4/3;
+    height: 700px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    border: 8px solid rgb(72, 218, 255);
+    background-color: snow;
+    overflow: auto;
+}
+.interests h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: xx-large;
+}
+.subscribe {
+    grid-area: 3/3/4/4;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border: 8px solid rgb(72, 218, 255);
+    background-color: snow;
+    padding: 10px;
+}
+.quote {
+    font-family: 'Dancing Script', cursive;
+}
+.subscribe form {
+    margin: 10px;
+    padding: 5px;
+}
+.formField {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+input[type=text] {
+    padding: 4px 6px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 4px solid rgb(107, 107, 107);
+    border-radius: 4px;
+}
+input[type=text]:focus {
+    border: 4px solid rgb(72, 218, 255);
+    outline: none;
+}
+input[type=button] {
+    background-color: rgb(107, 107, 107);
+    color: snow;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 4 px 4px lightgrey;
+    border: 4px solid rgb(107, 107, 107);
+}
+input[type=button]:hover {
+    color: rgb(255, 255, 255, 1);
+    box-shadow: 0 20px 20px rgb(72, 218, 255, .4);
+}
+
+footer {
+    grid-area: 4/1/5/4;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgb(107, 107, 107);
+    color: snow;
+}
+.contact {
+    padding: 10px;
+}
+.contact textarea {
+    padding: 4px 6px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 4px solid rgb(72, 218, 255);
+    border-radius: 4px; 
+}
+.contact textarea:focus {
+    border: 4px solid rgb(72, 218, 255);
+    outline: none;
+}
+.socialMedia {
+    margin: 20px;
+    padding: 10px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube {
+    background: #fe0000;
+    color: white;
+}
+.fa-linkedin {
+    background: #0073b0;
+    color: white;
+}
+
+@media(max-width: 320px) {
+    .container {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+        display: inline-flex;
+    }
+    .sidebar {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .interests {
+        width: 100%;
+    }
+    .subscribe {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    footer {
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact {
+        width: 100%;
+    }
+    .socialMedia {
+        display: inline;
+    }
+}

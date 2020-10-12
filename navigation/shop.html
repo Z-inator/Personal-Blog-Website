@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Personal Blog Website</title>
+        <meta name="description" content="Example"/>
+        <!-- Font styles -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <!-- CSS stylesheet for document -->
+        <link href="../styles/style.css" type="text/css" rel="stylesheet"/>
+        <!-- Social Media Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="../index.html">
+                    <h1>Welcome to the ADHD Blog</h1>
+                <h3>(a place where whatever is in my head is written about)</h3>
+                </a>
+            </header>
+            <nav>
+                <a href="./post.html">Posts</a>
+                <a href="./about.html">About</a>
+                <a href="./shop.html">Store</a>
+                <a href="./suggested.html">Suggested Reading</a>
+                <a href="./account.html">Account</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <article class="sidebar">
+                <a href="../posts/xboxPost.html">
+                    <h4>Our thoughts on what's next for Xbox?</h4>
+                </a>
+                <a href="../posts/starcitizenPost.html">
+                    <h4>Why I am still positive on Star Citizen</h4>
+                </a>
+                <a href="../posts/minecraftPost.html">
+                    <h4>Minecraft is the greatest child development game of all time</h4>
+                </a>
+                <a href="../posts/teslaPost.html">
+                    <h4>I desperately want a Tesla</h4>
+                </a>
+                <a href="../posts/softwarePost.html">
+                    <h4>How to become a software developer</h4>
+                </a>
+            </article>
+            <section class="writeup">
+                <h2>This page is currently under construction</h2>
+                <div class="construction">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click here to see what we have planned</a>
+                </div>
+            </section>
+            <section class="subscribe">
+                <div class="quote">
+                    <h1>Quote of the day:</h1>
+                    <h3>"Something really cheesy"</h3>
+                    <h3>   - Someone with influence</h3>
+                </div>
+                <form action="submission.html" method="POST">
+                    <h3>Join our Newsletter!</h3>
+                    <div class="formField">
+                        <label for="firstName">First Name</label>
+                        <br>
+                        <input type="text" name="firstName" id="firstName">
+                    </div>
+                    <div class="formField">
+                        <label for="lastName">Last Name</label>
+                        <br>
+                        <input type="text" name="lastName" id="larstName">
+                    </div>
+                    <div class="formField">
+                        <label for="eamil">Email</label>
+                        <br>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="formField">
+                        <label for="enjoyment">Please rate this site</label>
+                        <br>
+                        <span>Gross</span>
+                        <input type="range" name="enjoyment" id="enjoyment" value="5" min="0" max="10"
+                        <span>Awesome</span>
+                    </div>
+                    <div class="formField">
+                        <input type="button" value="Submit">
+                    </div>
+                </form>
+            </section>
+            <footer>
+                <div class="contact" id="contact">
+                    <p>The ADHD Blog</p>
+                    <p>Email: disturbed_lunatic_from_danville@gmail.com</p>
+                    <p>Phone: (xxx) xxx-xxxx</p>
+                    <label for="comments">Any comments about the site?</label>
+                    <br>
+                    <textarea id="comments" name="comment" rows="3" cols="30"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="socialMedia">
+                    <h3>Share on Social Media</h3>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
